@@ -10,10 +10,12 @@ config_version=5
 
 [application]
 
-config/name="Tutorial Game"
+config/name="Gold Rush"
 run/main_scene="uid://cwcrg65h1uhuq"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/fullsize=false
+boot_splash/image="uid://b2sspk2hx3ssi"
+config/icon="uid://dh2devigs73ee"
 
 [editor]
 
