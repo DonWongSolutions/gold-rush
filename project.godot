@@ -11,14 +11,21 @@ config_version=5
 [application]
 
 config/name="Gold Rush"
-run/main_scene="uid://cwcrg65h1uhuq"
+config/description="Gold Rush - Collect coins!"
+run/main_scene="uid://cse67e7arh88v"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/image="uid://b2sspk2hx3ssi"
-config/icon="uid://dh2devigs73ee"
+config/icon="uid://b2sspk2hx3ssi"
+config/windows_native_icon="res://images/gold-rush-logo.ico"
 
 [autoload]
 
 Music="*res://scenes/music.tscn"
+Global="*res://scripts/Global.gd"
+
+[display]
+
+window/stretch/aspect="expand"
 
 [editor]
 
@@ -28,6 +35,10 @@ version_control/autoload_on_startup=true
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
+[gui]
+
+theme/custom_font="uid://dwqma77hh1hwe"
 
 [input]
 
