@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=3 uid="uid://blc0856f135jx"]
+
+[ext_resource type="Script" uid="uid://c26q8tgst6cm1" path="res://scripts/health_bar.gd" id="1_tmb1u"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rr2qc"]
+bg_color = Color(0.241156, 0.241156, 0.241156, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8p41q"]
+bg_color = Color(1, 0, 0, 1)
+
+[node name="HealthBar" type="ProgressBar"]
+z_index = 1
+offset_left = 9.0
+offset_top = 9.0
+offset_right = 409.0
+offset_bottom = 39.0
+theme_override_styles/background = SubResource("StyleBoxFlat_rr2qc")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8p41q")
+value = 75.0
+script = ExtResource("1_tmb1u")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 57.0
+offset_right = 120.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Attempts: 0"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+offset_top = 35.0
+offset_right = 80.0
+offset_bottom = 51.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Score: 0"

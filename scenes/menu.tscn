@@ -1,0 +1,159 @@
+[gd_scene load_steps=8 format=3 uid="uid://cse67e7arh88v"]
+
+[ext_resource type="Script" uid="uid://c528w4v4b2h02" path="res://scripts/menu.gd" id="1_yqeox"]
+[ext_resource type="Texture2D" uid="uid://ccsjvx03c5hps" path="res://images/Main Menu BG.png" id="2_4ytvr"]
+[ext_resource type="Texture2D" uid="uid://hk1gevsti81a" path="res://assets/ui/Sprite sheets/Sprite sheet for Basic Pack.png" id="2_mhnvy"]
+[ext_resource type="FontFile" uid="uid://8idsladytk8y" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_4ytvr"]
+[ext_resource type="FontFile" uid="uid://x6qp3vtqauab" path="res://assets/ui/fonts/pixelFont-7-8x14-sproutLands.ttf" id="4_g3eks"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v86rl"]
+texture = ExtResource("2_mhnvy")
+region_rect = Rect2(467, 164, 10, 10)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_13sgg"]
+texture = ExtResource("2_mhnvy")
+region_rect = Rect2(451, 162, 10, 12)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yqeox")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_4ytvr")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -100.0
+offset_right = 195.0
+offset_bottom = -20.0
+grow_vertical = 0
+
+[node name="StartButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Start"
+
+[node name="OptionsButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "How to Play"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[node name="helpMenuContainer" type="MarginContainer" parent="."]
+process_mode = 3
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -200.0
+offset_right = 150.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="NinePatchRect" type="NinePatchRect" parent="helpMenuContainer"]
+custom_minimum_size = Vector2(300, 400)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_mhnvy")
+region_rect = Rect2(869, 6, 22, 22)
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="helpMenuContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Seperator" type="Control" parent="helpMenuContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="helpMenuContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Seperator" type="Control" parent="helpMenuContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="helpDisplay2" type="Label" parent="helpMenuContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_colors/font_outline_color = Color(0.564706, 0.384314, 0.364706, 1)
+theme_override_fonts/font = ExtResource("3_4ytvr")
+theme_override_font_sizes/font_size = 25
+text = "HOW TO PLAY"
+
+[node name="helpDisplay" type="Label" parent="helpMenuContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.564706, 0.384314, 0.364706, 1)
+theme_override_colors/font_outline_color = Color(0.564706, 0.384314, 0.364706, 1)
+theme_override_fonts/font = ExtResource("4_g3eks")
+theme_override_font_sizes/font_size = 25
+text = "Controls:
+
+Left/right arrows:
+movement (l/r)
+
+spacebar:
+jump
+
+collect coins and
+compete for the 
+least attempts.
+
+send your score to
+#gold-rush on slack!"
+
+[node name="exitbutton" type="VBoxContainer" parent="helpMenuContainer"]
+layout_mode = 2
+theme_override_constants/separation = 3
+
+[node name="seperator" type="Control" parent="helpMenuContainer/exitbutton"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="helpMenuContainer/exitbutton"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 6
+
+[node name="helpMenuCloseButton" type="Button" parent="helpMenuContainer/exitbutton/HBoxContainer"]
+process_mode = 3
+custom_minimum_size = Vector2(23, 23)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_styles/pressed = SubResource("StyleBoxTexture_v86rl")
+theme_override_styles/normal = SubResource("StyleBoxTexture_13sgg")
+
+[node name="seperator" type="Control" parent="helpMenuContainer/exitbutton/HBoxContainer"]
+layout_mode = 2
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="helpMenuContainer/exitbutton/HBoxContainer/helpMenuCloseButton" to="." method="_on_help_menu_close_button_pressed"]

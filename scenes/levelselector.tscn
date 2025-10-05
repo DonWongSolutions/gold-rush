@@ -1,0 +1,87 @@
+[gd_scene load_steps=3 format=3 uid="uid://b70kbr8n8yeyy"]
+
+[ext_resource type="Texture2D" uid="uid://ccsjvx03c5hps" path="res://images/Main Menu BG.png" id="1_a4vlq"]
+[ext_resource type="Script" uid="uid://byowa4s85lw42" path="res://scripts/levelselector.gd" id="1_qq53c"]
+
+[node name="Levelselector" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qq53c")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_a4vlq")
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = -100.0
+offset_right = 195.0
+offset_bottom = -20.0
+grow_vertical = 0
+
+[node name="level1" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+text = "Level 1"
+
+[node name="level2" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+text = "Level 2"
+
+[node name="level3" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+text = "Level 3"
+
+[node name="level4" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+text = "Level 4"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -55.5
+offset_right = 352.0
+offset_bottom = 55.5
+grow_vertical = 2
+text = " MENU
+ LEVEL 1 - GOLD RUSH ORIGINAL
+ LEVEL 2 - CRATE MADNESS
+ LEVEL 3 - DISAPPEARING HELP
+ LEVEL 4 - OBBY JOURNEY
+ LEVEL 5 - BOSS LEVEL 1"
+uppercase = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 16.0
+grow_horizontal = 2
+text = "
+Level 3 - Disappearing Help
+OUT NOW"
+horizontal_alignment = 1
+uppercase = true
+
+[connection signal="pressed" from="TextureRect/VBoxContainer/level1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/level4" to="." method="_on_level_3_pressed"]

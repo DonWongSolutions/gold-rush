@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://cwcrg65h1uhuq"]
+[gd_scene load_steps=23 format=3 uid="uid://cwcrg65h1uhuq"]
 
 [ext_resource type="Script" uid="uid://oa81wqb63wbm" path="res://scripts/game_manager.gd" id="1_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://dyriquioxniew" path="res://scenes/player.tscn" id="1_uwrxv"]
@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://8idsladytk8y" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="8_gee14"]
 [ext_resource type="PackedScene" uid="uid://cfhagtpf258nq" path="res://scenes/music.tscn" id="10_vtaks"]
 [ext_resource type="PackedScene" uid="uid://bkq2tkbk84m7r" path="res://scenes/in_game_ui.tscn" id="11_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://blx5bha2wwb07" path="res://scenes/game_end_tp.tscn" id="12_dinhu"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
 distance = -74.0
@@ -645,3 +646,6 @@ text = ">>>>>>>>>>>>>>>>>>>
 [node name="Music" parent="." instance=ExtResource("10_vtaks")]
 position = Vector2(0, -2)
 autoplay = false
+
+[node name="GameEndTP" parent="." instance=ExtResource("12_dinhu")]
+position = Vector2(1683, -17)
