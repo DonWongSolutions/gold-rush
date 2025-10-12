@@ -33,5 +33,6 @@ func _on_timer_timeout() -> void:
 	Engine.time_scale = 1
 	Global.attempts += 1
 	Global.score = 0
+	Global.mission = "No Mission in Progress"
 	print("Player Died, Global Attempts: " + str(Global.attempts))
 	get_tree().reload_current_scene()

@@ -6,7 +6,7 @@ var health = 100
 @onready var score_board: Label = $ScoreBoard
 
 func add_score():
-	Global.score += 1
+	Global.score += 1 * Global.scoremultiplier
 	print(Global.score)
 	score_board.text = "Score: " + str(Global.score) + " coins."
 	

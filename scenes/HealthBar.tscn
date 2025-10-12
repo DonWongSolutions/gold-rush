@@ -21,9 +21,9 @@ script = ExtResource("1_tmb1u")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
-offset_top = 57.0
-offset_right = 120.0
-offset_bottom = 73.0
+offset_top = 73.0
+offset_right = 142.0
+offset_bottom = 89.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Attempts: 0"
 
@@ -34,3 +34,19 @@ offset_right = 80.0
 offset_bottom = 51.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Score: 0"
+
+[node name="multiplier" type="Label" parent="."]
+layout_mode = 0
+offset_top = 54.0
+offset_right = 172.0
+offset_bottom = 70.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Multiplier: x1"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 0
+offset_top = 91.0
+offset_right = 394.0
+offset_bottom = 107.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Mission: No Mission in Progress"

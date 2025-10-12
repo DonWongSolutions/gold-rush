@@ -1,0 +1,13 @@
+~ start
+Pumpkin King: [speed=0.8] Hahaha! Hear me, mortals! I am the Pumpkin King!
+
+Pumpkin King: I shall cast a curse upon this miserable, fertile land! [wait=0.5] A great blight where no seed shall sprout, and nothing green shall ever thrive again!
+
+- Don't you dare! I will fight you!
+	Pumpkin King: Fight? [wait=0.3] How quaint. You cannot fight fate. But, perhaps... a tribute?
+	
+	Pumpkin King: Bring me **75 coins** before our final encounter, and I shall lift the blight! Otherwise, enjoy your dust bowl! [next=auto] See you at the end, little hero!
+	
+	You: Alright, bet!
+	
+=> END

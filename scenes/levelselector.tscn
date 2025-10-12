@@ -62,7 +62,7 @@ text = " MENU
  LEVEL 1 - GOLD RUSH ORIGINAL
  LEVEL 2 - CRATE MADNESS
  LEVEL 3 - DISAPPEARING HELP
- LEVEL 4 - OBBY JOURNEY
+ LEVEL 4 - The pumpkin's curse
  LEVEL 5 - BOSS LEVEL 1"
 uppercase = true
 
@@ -76,12 +76,11 @@ offset_right = 20.0
 offset_bottom = 16.0
 grow_horizontal = 2
 text = "
-Level 3 - Disappearing Help
-OUT NOW"
+Note: CLICK THE WHITE BAR at THE BOTTOM OF YOUR SCREEN TO ACCESS THE IN GAME MENU!"
 horizontal_alignment = 1
 uppercase = true
 
 [connection signal="pressed" from="TextureRect/VBoxContainer/level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="TextureRect/VBoxContainer/level3" to="." method="_on_level_3_pressed"]
-[connection signal="pressed" from="TextureRect/VBoxContainer/level4" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/level4" to="." method="_on_level_4_pressed"]

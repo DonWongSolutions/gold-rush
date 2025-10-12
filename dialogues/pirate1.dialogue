@@ -1,0 +1,10 @@
+~ start
+Old Man: [speed=2] Young Man! [wait=0.3] There is no time. Take this! *He shoves a pulsing, golden medallion into your hand.*
+
+Old Man: This is a Boon of Fortune! Your next twenty coins, multiplied by two! [next=auto]
+
+Old Man: And a single, powerful draught [wait=0.3] to mend your wounds! Your health is fully restored!
+
+- Thanks for the help!
+	Old Man: [speed=1.5] Help is all we have left. You are the sword of our defiance! Face the Evil Pumpkin! Let him taste our vengeance!
+=> END

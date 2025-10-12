@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://b0dl3yvf8rdpq"
+path="res://.godot/imported/pumpkinend_no.dialogue-3b3ae7f18a183f139f800d42a88a805a.tres"
+
+[deps]
+
+source_file="res://dialogues/pumpkinend_no.dialogue"
+dest_files=["res://.godot/imported/pumpkinend_no.dialogue-3b3ae7f18a183f139f800d42a88a805a.tres"]
+
+[params]
+
+defaults=true

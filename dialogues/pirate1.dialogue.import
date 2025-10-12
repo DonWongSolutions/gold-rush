@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://buv0k3c6ujdhw"
+path="res://.godot/imported/pirate1.dialogue-51336d45dcb9c4122a4beab24161638b.tres"
+
+[deps]
+
+source_file="res://dialogues/pirate1.dialogue"
+dest_files=["res://.godot/imported/pirate1.dialogue-51336d45dcb9c4122a4beab24161638b.tres"]
+
+[params]
+
+defaults=true

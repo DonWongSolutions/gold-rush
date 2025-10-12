@@ -1,0 +1,9 @@
+~ start
+Pumpkin King: [speed=0.8] Ah, back already? Let me see...
+
+Pumpkin King: [wait=0.5] ...Pathetic. You still lack the full seventy-five. [next=auto]
+
+Pumpkin King: You had one simple task, little hero! You insulted my challenge! YOU INSULTED ME!
+
+Pumpkin King: [speed=0.5] YOUR FAILURE ENDS HERE! DIE!
+=> END

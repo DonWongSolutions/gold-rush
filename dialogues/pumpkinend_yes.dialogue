@@ -1,0 +1,10 @@
+~ start
+Pumpkin King: [speed=1.2] Hmph. Unbelievable. [wait=0.5]
+
+Pumpkin King: I am, regrettably, a man of my words. 75 coins, precisely. [next=auto] You have shown a surprising... resolve. The blight upon this land is lifted.
+
+- Thanks...?
+	Pumpkin King: Don't get comfortable. This is but a reprieve! Mark my words, when I return, there will be no deals, no challenges, only destruction!
+	
+	System: [wait=1] A faint light appears in a nearby drain. Jump into the Pothole to exit the level and escape the Pumpkin King's wrath.
+=> END
