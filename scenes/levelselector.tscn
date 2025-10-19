@@ -33,21 +33,30 @@ offset_right = 195.0
 offset_bottom = -20.0
 grow_vertical = 0
 
-[node name="level1" type="Button" parent="TextureRect/VBoxContainer"]
+[node name="Level_1" type="Button" parent="TextureRect/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
 text = "Level 1"
 
-[node name="level2" type="Button" parent="TextureRect/VBoxContainer"]
+[node name="Level_2" type="Button" parent="TextureRect/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
 text = "Level 2"
 
-[node name="level3" type="Button" parent="TextureRect/VBoxContainer"]
+[node name="Level_3" type="Button" parent="TextureRect/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
 text = "Level 3"
 
-[node name="level4" type="Button" parent="TextureRect/VBoxContainer"]
+[node name="Level_4" type="Button" parent="TextureRect/VBoxContainer"]
 layout_mode = 2
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
 text = "Level 4"
+
+[node name="Level_5" type="Button" parent="TextureRect/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
+text = "Level 5"
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 1
@@ -63,7 +72,7 @@ text = " MENU
  LEVEL 2 - CRATE MADNESS
  LEVEL 3 - DISAPPEARING HELP
  LEVEL 4 - The pumpkin's curse
- LEVEL 5 - BOSS LEVEL 1"
+ LEVEL 5 - zombie attack"
 uppercase = true
 
 [node name="Label" type="Label" parent="."]
@@ -80,7 +89,51 @@ Note: CLICK THE WHITE BAR at THE BOTTOM OF YOUR SCREEN TO ACCESS THE IN GAME MEN
 horizontal_alignment = 1
 uppercase = true
 
-[connection signal="pressed" from="TextureRect/VBoxContainer/level1" to="." method="_on_level_1_pressed"]
-[connection signal="pressed" from="TextureRect/VBoxContainer/level2" to="." method="_on_level_2_pressed"]
-[connection signal="pressed" from="TextureRect/VBoxContainer/level3" to="." method="_on_level_3_pressed"]
-[connection signal="pressed" from="TextureRect/VBoxContainer/level4" to="." method="_on_level_4_pressed"]
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 209.0
+offset_top = 604.0
+offset_right = 1093.0
+offset_bottom = 639.0
+text = "You cannot progress into levels without completing the previous ones, 
+unless you are a tester, the bypass method is in project description"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -338.0
+offset_top = -46.0
+offset_bottom = 46.0
+grow_horizontal = 0
+grow_vertical = 2
+text = "Your Information:
+
+
+Tokens = number of coins 
+you got in each level * 0.25"
+
+[node name="progresslabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 815.0
+offset_top = 295.0
+offset_right = 1033.0
+offset_bottom = 311.0
+text = "Progress: Level 0"
+
+[node name="tokenslabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 814.0
+offset_top = 314.0
+offset_right = 958.0
+offset_bottom = 330.0
+text = "Tokens: 000"
+
+[connection signal="pressed" from="TextureRect/VBoxContainer/Level_1" to="." method="_on_level_1_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/Level_2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/Level_3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/Level_4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="TextureRect/VBoxContainer/Level_5" to="." method="_on_level_5_pressed"]

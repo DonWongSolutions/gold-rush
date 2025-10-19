@@ -60,8 +60,8 @@ position = Vector2(0, 5)
 target_position = Vector2(11, 0)
 
 [node name="minushealthzone" type="Area2D" parent="."]
-collision_layer = 4
-collision_mask = 4
+collision_layer = 12
+collision_mask = 12
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="minushealthzone"]
 position = Vector2(0, 6)

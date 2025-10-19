@@ -424,6 +424,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="GameEndTP" parent="." instance=ExtResource("12_qewby")]
 position = Vector2(1756, -59)
+level = 3
 
 [node name="Coin8" parent="." instance=ExtResource("10_6qt4k")]
 position = Vector2(877, -9)

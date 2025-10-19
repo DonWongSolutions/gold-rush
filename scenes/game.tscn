@@ -649,3 +649,4 @@ autoplay = false
 
 [node name="GameEndTP" parent="." instance=ExtResource("12_dinhu")]
 position = Vector2(1683, -17)
+level = 1

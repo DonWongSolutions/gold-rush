@@ -695,6 +695,7 @@ text = ">>>>>>>>>>>>>>>>>>>
 
 [node name="GameEndTP" parent="Labels/Label2/Label" instance=ExtResource("12_56gwk")]
 position = Vector2(30, -202)
+level = 2
 
 [node name="Music" parent="." instance=ExtResource("11_s4es8")]
 position = Vector2(0, -2)

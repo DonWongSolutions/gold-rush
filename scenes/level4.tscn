@@ -27,7 +27,7 @@
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_3n7tn"]
 distance = -74.0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8f67t"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_m8ews"]
 texture = ExtResource("6_jvphm")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -191,7 +191,7 @@ texture = ExtResource("6_jvphm")
 
 [sub_resource type="TileSet" id="TileSet_2vnbt"]
 physics_layer_0/collision_layer = 5
-sources/0 = SubResource("TileSetAtlasSource_8f67t")
+sources/0 = SubResource("TileSetAtlasSource_m8ews")
 
 [sub_resource type="Animation" id="Animation_xtaj5"]
 length = 0.001
@@ -542,6 +542,7 @@ offset_bottom = 25.0
 scale = Vector2(0.452983, 0.452983)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "Share your score on #gold-rush!"
+metadata/_edit_use_anchors_ = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 layer = 10
@@ -953,3 +954,4 @@ position = Vector2(1555, 9)
 [node name="GameEndTP" parent="." instance=ExtResource("23_m8ews")]
 position = Vector2(2100, -75)
 scale = Vector2(0.39722, 0.134331)
+level = 4
